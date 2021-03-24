@@ -1,0 +1,134 @@
+/* ----------VARIABLES */
+:root {
+--main-color:#8841DA;
+--black-color:#333333;
+--white-color: #fff;
+--black-ligth-color: rgb(51 51 51 / 49%);
+--letter-color: #3f579a;
+ /* ---FUENTES */
+ --main-letter: 'Oswald', sans-serif;
+ /* ---TIPOGRAFIA */
+ --h-size: 30px;
+ --icon-size: 20px;
+ --title-weight: 700;
+
+}
+/* --END VARIABLES */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-letter);
+}
+
+/* --------NAV BAR AND HEADER */
+
+header{
+    padding: 0 20px 20px 20px;
+}
+
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.nav_bar a{
+    text-decoration: none;
+}
+
+ .nav_section ul li{
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    
+    text-transform: uppercase;
+}
+
+.nav_section a{
+    display: flex;
+    color: var(--letter-color);
+    font-weight: 700;
+}
+
+.nav_section{
+    display: flex;
+    padding-top: 30px;
+}
+
+.nav_section a:hover{
+    text-decoration: underline;
+}
+
+#search{
+    padding-left:500px ;
+}
+
+#search i{
+    color:var(--main-color);
+    margin: -10px;
+    font-size: var(--icon-size);
+}
+
+/* --------MAIN SECTION - BODY*/
+
+.main_section{
+    display: grid;
+    grid-template:repeat(4 20px / 4 20px);
+}
+
+.box_cyber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    padding-top: 45px;
+    width: 1000px;
+    height: 500px;
+    background-image: url(img/cyberpunk-2077.jpg);
+    opacity: .9;
+}
+
+.box_content{
+    font-family: var(--main-letter);
+    font-weight: var(--title-weight);
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.box_title{
+    background-color: var(--main-color);
+    padding: 0px 15px;
+    
+}
+
+.box_content h2{
+    margin: auto;
+    font-size: var(--h-size);
+}
+
+.preview{
+    text-transform: none;
+    font-weight: normal;
+    margin: auto;
+}
+
+.list_stats{
+    display: inline-flex;
+    list-style: none;
+    position: relative;
+    bottom: 110px;
+    left: 20px;
+   color: var(--white-color); 
+}
+
+.list_stats li{
+    padding: 0px 15px;
+}
+
+.list_stats span{
+    padding: 5px;
+}
+
