@@ -5,8 +5,21 @@
 --white-color: #fff;
 --black-ligth-color: rgb(51 51 51 / 49%);
 --letter-color: #3f579a;
+--img-opacity:linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, -0.5)
+  );
+--img-opacity-ligh:linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+
+/*SIDEBAR-ELEMENT */
+--sidebar-rgb:rgba(51, 51, 51, 0.5);
+--border-color:#3f579a;
  /* ---FUENTES */
  --main-letter: 'Oswald', sans-serif;
+ --sub-letter:'Lato', sans-serif;
  /* ---TIPOGRAFIA */
  --h-size: 30px;
  --icon-size: 20px;
@@ -25,7 +38,7 @@ body{
 }
 
 p{
-    font-family: 'Lato', sans-serif;
+    font-family: var(--sub-letter);
 }
 
 /* --------NAV BAR AND HEADER */
@@ -96,10 +109,7 @@ header{
     text-align: center;
     margin:var(--margin-card);
     padding-top: var(--padding-top-card);
-    background-image:linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, -0.5)
-      ), url(img/cyberpunk-2077.jpg);
+    background-image:var(--img-opacity), url(img/cyberpunk-2077.jpg);
     background-repeat: no-repeat;
     grid-column-start: 1;
     grid-column-end: 4;
@@ -112,6 +122,7 @@ header{
     font-weight: var(--title-weight);
     color: var(--white-color);
     text-transform: uppercase;
+    margin-top: -20px;
 }
 
 .box_title{
@@ -159,10 +170,7 @@ header{
 /* --------RED DEAD REDEMPTION*/
 
 .box_rdr{
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ), url(img/rdr2.jpg); 
+    background-image: var(--img-opacity-ligh), url(img/rdr2.jpg); 
     grid-row-start: 1;
     grid-row-end: 2;
     margin:var(--margin-card);
@@ -189,7 +197,7 @@ header{
     grid-row-end: 4;
     background-color: var(--main-color);
     margin: var(--margin-card);
-    padding-top: 45px;
+    padding-top: var(--padding-top-card);
     color: var(--white-color);
 }
 
@@ -212,4 +220,112 @@ header{
 .button:hover{
     background-color: var(--black-color);
     text-decoration: underline;
+}
+
+/* --------SIDEBAR*/
+
+.sidebar{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    max-width: 300px;
+    margin: var(--margin-card);
+    padding-top: var(--padding-top-card);
+    box-shadow: 0px 20px 33px 0px rgb(0 0 0 / 20%);
+}
+
+.sidebar h1{
+    margin: -35px 0px 15px;
+    text-transform: uppercase;
+}
+
+.sidebar_list{
+    padding: 0px 20px;
+    font-family: var(--sub-letter);
+    
+}
+.sidebar_list  ul, a {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: var(--sidebar-rgb);
+}
+
+
+.sidebar_list a{
+    display: flex;
+    padding: 10px 20px;
+}
+
+.sidebar_list li{
+    border-top: 1px solid var(--border-color);
+    padding: 10px 0px 25px;
+
+}
+
+.sidebar_list_number{
+   margin-right: 20px;
+}
+
+.sidebar_list a:hover{
+    text-decoration: underline;
+}
+
+/* --------ZELDA*/
+
+.box_zelda{
+    background-image: var(--img-opacity),url(img/zelda.jpg);
+    background-position: right;
+    grid-column-start: 2;
+    grid-column-end: 4; 
+    padding-top:var(--padding-top-card);
+    text-align: center;
+}
+
+.zelda_stats{
+    position: relative;
+    right: 200px;
+    top: 100px;
+}
+
+
+/* --------FINAL FANTASY*/
+
+.box_fnf{
+    background-image: var(--img-opacity), url(img/final-fantasy.jpg);
+    background-repeat: no-repeat;
+    grid-column-start: 2;
+    grid-row-start: 4;
+    margin: var(--margin-card);
+    padding-top: var(--padding-top-card);
+    height: 200px;
+    text-align: center;
+
+}
+
+/* --------FORNITE*/
+
+.box_fornite{
+    background-image: var(--img-opacity-ligh), url(img/fortnite.jpg);
+    grid-column-start: 3;
+    grid-row-start: 4;
+    margin: var(--margin-card);
+    padding-top: var(--padding-top-card);
+    height: 200px;
+    text-align: center;
+
+}
+
+/* --------XBOX*/
+
+.box_xbox{
+    background-image:var(--img-opacity-ligh), url(img/xbox.jpg);
+    grid-column-start: 4;
+    grid-row-start: 4;
+    margin: var(--margin-card);
+    padding-top: var(--padding-top-card);
+    height: 200px;
+    text-align: center;
+    
 }
