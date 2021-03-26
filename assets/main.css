@@ -45,6 +45,7 @@ p{
 
 header{
     padding: 0 20px 20px 20px;
+    border-bottom: 1px solid var(--main-color);
 }
 
 .nav_bar{
@@ -314,7 +315,10 @@ header{
     padding-top: var(--padding-top-card);
     height: 200px;
     text-align: center;
+}
 
+.fornite_stats{
+    padding-top: 35px;
 }
 
 /* --------XBOX*/
@@ -326,6 +330,83 @@ header{
     margin: var(--margin-card);
     padding-top: var(--padding-top-card);
     height: 200px;
-    text-align: center;
+    text-align: center;   
+}
+
+/* --------FOOTER*/
+
+footer{
+    background-color: var(--black-color);
+    padding: 0 20px 20px 20px;
+}
+
+
+.nav_bar_footer{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.nav_bar_footer a{
+    text-decoration: none;
+}
+
+ .nav_section_footer ul li{
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
     
+    text-transform: uppercase;
+}
+
+.nav_section_footer a{
+    display: flex;
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+.nav_section_footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.nav_section_footer a:hover{
+    text-decoration: underline;
+}
+.social{
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+    font-family: var(--sub-letter);
+    margin-top: 25px;
+}
+
+.social span{
+    cursor: pointer;
+}
+ 
+#social_media{
+    display: flex;
+    list-style: none;
+} 
+
+#social_media  i{
+    color: var(--white-color);
+    font-size: var(--icon-size);
+} 
+
+#social_media li{
+    padding-right:70px;
+}
+
+
+#social_media i:hover{
+    color: var(--main-color);
+}
+
+.social span:hover{
+    color: var(--main-color);
+
 }
