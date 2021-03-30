@@ -1,100 +1,95 @@
 /* ----------VARIABLES */
+
 :root {
---main-color:#8841DA;
---black-color:#333333;
---white-color: #fff;
---black-ligth-color: rgb(51 51 51 / 49%);
---letter-color: #3f579a;
---img-opacity:linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, -0.5)
-  );
---img-opacity-ligh:linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  );
-
-/*SIDEBAR-ELEMENT */
---sidebar-rgb:rgba(51, 51, 51, 0.5);
---border-color:#3f579a;
- /* ---FUENTES */
- --main-letter: 'Oswald', sans-serif;
- --sub-letter:'Lato', sans-serif;
- /* ---TIPOGRAFIA */
- --h-size: 30px;
- --icon-size: 20px;
- --title-weight: 700;
- --margin-card: 20px;
- --padding-top-card: 45px;
-
-
+    --main-color: #8841DA;
+    --black-color: #333333;
+    --white-color: #fff;
+    --black-ligth-color: rgb(51 51 51 / 49%);
+    --letter-color: #3f579a;
+    --img-opacity: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, -0.5));
+    --img-opacity-ligh: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    /*SIDEBAR-ELEMENT */
+    --sidebar-rgb: rgba(51, 51, 51, 0.5);
+    --border-color: #3f579a;
+    /* ---FUENTES */
+    --main-letter: 'Oswald', sans-serif;
+    --sub-letter: 'Lato', sans-serif;
+    /* ---TIPOGRAFIA */
+    --h-size: 30px;
+    --icon-size: 20px;
+    --title-weight: 700;
+    --margin-card: 20px;
+    --padding-top-card: 45px;
 }
+
+
 /* --END VARIABLES */
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: var(--main-letter);
 }
 
-p{
+p {
     font-family: var(--sub-letter);
 }
 
+
 /* --------NAV BAR AND HEADER */
 
-header{
+header {
     padding: 0 20px 20px 20px;
     border-bottom: 1px solid var(--main-color);
 }
 
-.nav_bar{
+.nav_bar {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
 }
 
-.nav_bar a{
+.nav_bar a {
     text-decoration: none;
 }
 
- .nav_section ul li{
+.nav_section ul li {
     display: inline-flex;
     text-decoration: none;
     list-style: none;
     padding: 10px;
-    
     text-transform: uppercase;
 }
 
-.nav_section a{
+.nav_section a {
     display: flex;
     color: var(--letter-color);
     font-weight: 700;
 }
 
-.nav_section{
+.nav_section {
     display: flex;
     padding-top: 30px;
 }
 
-.nav_section a:hover{
+.nav_section a:hover {
     text-decoration: underline;
 }
 
-#search{
-    padding-left:500px ;
+#search {
+    padding-left: 500px;
 }
 
-#search i{
-    color:var(--main-color);
+#search i {
+    color: var(--main-color);
     margin: -10px;
     font-size: var(--icon-size);
 }
 
+
 /* --------MAIN SECTION - BODY*/
 
-.main_section{
+.main_section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -103,14 +98,14 @@ header{
     grid-gap: 0;
 }
 
-.box_cyber{
+.box_cyber {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin:var(--margin-card);
+    margin: var(--margin-card);
     padding-top: var(--padding-top-card);
-    background-image:var(--img-opacity), url(img/cyberpunk-2077.jpg);
+    background-image: var(--img-opacity), url(img/cyberpunk-2077.jpg);
     background-repeat: no-repeat;
     grid-column-start: 1;
     grid-column-end: 4;
@@ -118,7 +113,7 @@ header{
     grid-row-end: 3;
 }
 
-.box_content{
+.box_content {
     font-family: var(--main-letter);
     font-weight: var(--title-weight);
     color: var(--white-color);
@@ -126,62 +121,60 @@ header{
     margin-top: -20px;
 }
 
-.box_title{
+.box_title {
     display: block;
     max-width: 100px;
     margin: 0 auto;
     text-align: center;
     background-color: var(--main-color);
-    
 }
 
-.box_content h2{
+.box_content h2 {
     margin: auto;
     font-size: var(--h-size);
 }
 
-.preview{
+.preview {
     text-transform: none;
     font-weight: normal;
     margin: auto;
 }
 
-.cyber_stats{
+.cyber_stats {
     grid-row-start: 2;
     grid-column-start: 2;
     position: relative;
     top: 185px;
     right: 300px;
 }
-.list_stats{
+
+.list_stats {
     display: inline-flex;
     list-style: none;
-    color: var(--white-color); 
+    color: var(--white-color);
 }
 
-.list_stats li{
+.list_stats li {
     padding: 0px 15px;
 }
 
-.list_stats span{
+.list_stats span {
     padding: 5px;
 }
 
 
 /* --------RED DEAD REDEMPTION*/
 
-.box_rdr{
-    background-image: var(--img-opacity-ligh), url(img/rdr2.jpg); 
+.box_rdr {
+    background-image: var(--img-opacity-ligh), url(img/rdr2.jpg);
     grid-row-start: 1;
     grid-row-end: 2;
-    margin:var(--margin-card);
+    margin: var(--margin-card);
     padding-top: var(--padding-top-card);
     text-align: center;
 }
 
-
-
-.rdr_stats{
+.rdr_stats {
     position: relative;
     bottom: 75px;
     left: 305px;
@@ -189,9 +182,10 @@ header{
     grid-row-start: 2;
 }
 
+
 /* --------BANNER*/
 
-.banner{
+.banner {
     grid-column-start: 4;
     grid-column-end: 4;
     grid-row-start: 2;
@@ -202,11 +196,11 @@ header{
     color: var(--white-color);
 }
 
-.banner_content{
+.banner_content {
     padding: 0px 50px 50px;
 }
 
-.button{
+.button {
     padding: 10px;
     height: 50px;
     border: 2px solid var(--white-color);
@@ -218,14 +212,15 @@ header{
     text-decoration: none;
 }
 
-.button:hover{
+.button:hover {
     background-color: var(--black-color);
     text-decoration: underline;
 }
 
+
 /* --------SIDEBAR*/
 
-.sidebar{
+.sidebar {
     grid-row-start: 3;
     grid-row-end: 5;
     grid-column-start: 1;
@@ -235,17 +230,18 @@ header{
     box-shadow: 0px 20px 33px 0px rgb(0 0 0 / 20%);
 }
 
-.sidebar h1{
+.sidebar h1 {
     margin: -35px 0px 15px;
     text-transform: uppercase;
 }
 
-.sidebar_list{
+.sidebar_list {
     padding: 0px 20px;
     font-family: var(--sub-letter);
-    
 }
-.sidebar_list  ul, a {
+
+.sidebar_list ul,
+a {
     list-style: none;
     text-decoration: none;
     margin: 0;
@@ -253,38 +249,37 @@ header{
     color: var(--sidebar-rgb);
 }
 
-
-.sidebar_list a{
+.sidebar_list a {
     display: flex;
     padding: 10px 20px;
 }
 
-.sidebar_list li{
+.sidebar_list li {
     border-top: 1px solid var(--border-color);
     padding: 10px 0px 25px;
-
 }
 
-.sidebar_list_number{
-   margin-right: 20px;
+.sidebar_list_number {
+    margin-right: 20px;
 }
 
-.sidebar_list a:hover{
+.sidebar_list a:hover {
     text-decoration: underline;
 }
 
+
 /* --------ZELDA*/
 
-.box_zelda{
-    background-image: var(--img-opacity),url(img/zelda.jpg);
+.box_zelda {
+    background-image: var(--img-opacity), url(img/zelda.jpg);
     background-position: right;
     grid-column-start: 2;
-    grid-column-end: 4; 
-    padding-top:var(--padding-top-card);
+    grid-column-end: 4;
+    padding-top: var(--padding-top-card);
     text-align: center;
 }
 
-.zelda_stats{
+.zelda_stats {
     position: relative;
     right: 200px;
     top: 100px;
@@ -293,7 +288,7 @@ header{
 
 /* --------FINAL FANTASY*/
 
-.box_fnf{
+.box_fnf {
     background-image: var(--img-opacity), url(img/final-fantasy.jpg);
     background-repeat: no-repeat;
     grid-column-start: 2;
@@ -302,12 +297,12 @@ header{
     padding-top: var(--padding-top-card);
     height: 200px;
     text-align: center;
-
 }
+
 
 /* --------FORNITE*/
 
-.box_fornite{
+.box_fornite {
     background-image: var(--img-opacity-ligh), url(img/fortnite.jpg);
     grid-column-start: 3;
     grid-row-start: 4;
@@ -317,65 +312,66 @@ header{
     text-align: center;
 }
 
-.fornite_stats{
+.fornite_stats {
     padding-top: 35px;
 }
 
+
 /* --------XBOX*/
 
-.box_xbox{
-    background-image:var(--img-opacity-ligh), url(img/xbox.jpg);
+.box_xbox {
+    background-image: var(--img-opacity-ligh), url(img/xbox.jpg);
     grid-column-start: 4;
     grid-row-start: 4;
     margin: var(--margin-card);
     padding-top: var(--padding-top-card);
     height: 200px;
-    text-align: center;   
+    text-align: center;
 }
+
 
 /* --------FOOTER*/
 
-footer{
+footer {
     background-color: var(--black-color);
     padding: 0 20px 20px 20px;
 }
 
-
-.nav_bar_footer{
+.nav_bar_footer {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
 }
 
-.nav_bar_footer a{
+.nav_bar_footer a {
     text-decoration: none;
 }
 
- .nav_section_footer ul li{
+.nav_section_footer ul li {
     display: inline-flex;
     text-decoration: none;
     list-style: none;
     padding: 10px;
-    
     text-transform: uppercase;
 }
 
-.nav_section_footer a{
+.nav_section_footer a {
     display: flex;
     color: var(--white-color);
     font-weight: 700;
 }
 
-.nav_section_footer{
+.nav_section_footer {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
 }
 
-.nav_section_footer a:hover{
+.nav_section_footer a:hover {
     text-decoration: underline;
 }
-.social{
+
+.social {
     display: flex;
     align-items: center;
     color: var(--white-color);
@@ -383,30 +379,28 @@ footer{
     margin-top: 25px;
 }
 
-.social span{
+.social span {
     cursor: pointer;
 }
- 
-#social_media{
+
+#social_media {
     display: flex;
     list-style: none;
-} 
+}
 
-#social_media  i{
+#social_media i {
     color: var(--white-color);
     font-size: var(--icon-size);
-} 
-
-#social_media li{
-    padding-right:70px;
 }
 
+#social_media li {
+    padding-right: 70px;
+}
 
-#social_media i:hover{
+#social_media i:hover {
     color: var(--main-color);
 }
 
-.social span:hover{
+.social span:hover {
     color: var(--main-color);
-
 }
