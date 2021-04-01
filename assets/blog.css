@@ -82,3 +82,73 @@
     color: var(--title-rgba);
     font-weight: var(--title-weight);
 }
+
+
+/* ----------CONTENIDO */
+
+.post_content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.intro_title {
+    font-size: 25px;
+}
+
+.title_content {
+    font-size: 20px;
+    font-family: var(--main-letter);
+    color: var(--main-color);
+    font-weight: var(--title-weight);
+}
+
+.post_content h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+
+/* ----------CARD'S */
+
+.blog_card {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+}
+
+.box_card {
+    max-width: 420px;
+    box-shadow: 0px 20px 33px 15px rgb(0 0 0 / 20%);
+}
+
+.content_card {
+    padding: 15px;
+}
+
+.content_card span {
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-weight: var(--title-weight);
+}
+
+.content_card h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: var(--title-weight);
+    margin: 0;
+}
+
+.content_card p {
+    margin: 0px 0px 16px;
+}
+
+.content_card a {
+    text-transform: uppercase;
+    color: var(--border-color);
+    font-weight: var(--title-weight);
+}
+
+.content_card a:hover {
+    color: var(--black-color);
+}
