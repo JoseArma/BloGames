@@ -1,0 +1,65 @@
+/* ----------VARIABLES */
+
+@import url(variables.css);
+
+/* --END VARIABLES */
+
+
+/* -- INPUT */
+
+.seeker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/cover.jpg);
+    background-size: cover;
+    padding: 100px;
+}
+
+.seeker_input {
+    width: 800px;
+    height: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 25px;
+    outline: none;
+}
+
+
+/* -- RESULT SECTION */
+
+.result_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 100px;
+    padding-bottom: 150px;
+}
+
+.result_title {
+    text-transform: uppercase;
+}
+
+.result_title h2 {
+    font-size: var(--h-size);
+}
+
+.result_filter {
+    padding: 20px;
+    color: var(--black-color);
+    text-transform: uppercase;
+    font-weight: var(--title-weight);
+    box-shadow: 8px 25px 37px 3px rgb(0 0 0 / 25%);
+}
+
+.result_filter a {
+    color: #ccc;
+    margin-left: 20px;
+    font-size: var(--icon-size);
+}
+
+.result_filter a:hover {
+    color: var(--main-color);
+}
